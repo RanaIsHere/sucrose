@@ -1,9 +1,14 @@
-
+import Header from "../../../components/header";
+import styles from "./page.module.css";
 
 export default function Cart() {
     return (
-        <div>
-            <p>Cart</p>
+        <div className={styles.page}>
+            <Header />
+
+            <main className={styles.main}>
+
+            </main>
         </div>
     );
 }

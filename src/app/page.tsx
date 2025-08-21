@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../../components/header";
 import styles from "./page.module.css";
+import Category from "../../components/category";
 
 export default function Home() {
   return (
@@ -21,6 +22,10 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      <Category title={"PAST JOY"} subtitle={"Your previous order"} />
+      <Category title={"QUICK & SIMPLE"} subtitle={"On-the-go meals"} />
+      <Category title={"FULFILLING & WARM"} subtitle={"Breakfast & dinner"} />
     </div>
   );
 }

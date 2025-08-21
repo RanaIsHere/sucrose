@@ -1,0 +1,31 @@
+.categoryContainer {
+    margin: 1rem;
+}
+
+.categoryHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.categoryTitle {
+    font-family: var(--font-koulen-regular);
+    font-size: 20px;
+}
+
+.categorySubtitle {
+    font-family: var(--font-inika-regular);
+    font-size: 16px;
+    opacity: 75%;
+}
+
+@media screen and (width >=600px) {
+    .categoryTitle {
+        font-size: 32px;
+    }
+
+    .categorySubtitle {
+        font-size: 16px;
+    }
+}

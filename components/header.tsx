@@ -7,7 +7,7 @@ export default function Header() {
             <Image src="/icons/sucrose-logo.svg" alt='Sucrose Logo' width={192} height={64} />
 
             <div className={styles.buttonGroup}>
-                <a href='#cart'>
+                <a href='/cart'>
                     <Image src="/icons/cart-btn.svg" alt="View cart" width={48} height={48} />
                 </a>
 
