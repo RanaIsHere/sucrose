@@ -1,11 +1,13 @@
+import { ReactNode } from "react";
 import styles from "./category.module.css";
 
 type CategoryProps = {
     title: string,
     subtitle: string
+    children: ReactNode
 }
 
-export default function Category({ title, subtitle }: CategoryProps) {
+export default function Category({ title, subtitle, children }: CategoryProps) {
     return (
         <div className={styles.categoryContainer}>
             <div className={styles.categoryHead}>
@@ -15,7 +17,7 @@ export default function Category({ title, subtitle }: CategoryProps) {
             </div>
 
             <div className={styles.categoryContent}>
-
+                {children}
             </div>
         </div>
     )

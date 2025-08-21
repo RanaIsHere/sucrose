@@ -23,9 +23,15 @@ export default function Home() {
         </div>
       </main>
 
-      <Category title={"PAST JOY"} subtitle={"Your previous order"} />
-      <Category title={"QUICK & SIMPLE"} subtitle={"On-the-go meals"} />
-      <Category title={"FULFILLING & WARM"} subtitle={"Breakfast & dinner"} />
+      <Category title={"PAST JOY"} subtitle={"Your previous order"}>
+        <p>test</p>
+      </Category>
+      <Category title={"QUICK & SIMPLE"} subtitle={"On-the-go meals"}>
+        <p>test</p>
+      </Category>
+      <Category title={"FULFILLING & WARM"} subtitle={"Breakfast & dinner"}>
+        <p>test</p>
+      </Category>
     </div>
   );
 }
