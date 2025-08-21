@@ -1,6 +1,7 @@
 :root {
   --background: #2E372B;
   --foreground: #3B4A34;
+  --foreground-box: #87A878;
   --text-color: white;
 }
 
