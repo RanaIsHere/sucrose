@@ -5,6 +5,7 @@
 .categoryHead {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 16px;
 }
@@ -25,14 +26,28 @@
     flex-direction: row;
     align-items: center;
     gap: 16px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.categoryContent::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (width >=600px) {
+    .categoryHead {
+        justify-content: start;
+    }
+
     .categoryTitle {
         font-size: 32px;
     }
 
     .categorySubtitle {
         font-size: 16px;
+    }
+
+    .categoryContent {
+        flex-wrap: wrap;
     }
 }

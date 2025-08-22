@@ -26,18 +26,18 @@ export default function Home() {
 
       <Category title={"PAST JOY"} subtitle={"Your previous order"}>
         <FoodItem />
-        {/* <FoodItem />
-        <FoodItem /> */}
+        <FoodItem />
+        <FoodItem />
       </Category>
       <Category title={"QUICK & SIMPLE"} subtitle={"On-the-go meals"}>
         <FoodItem />
-        {/* <FoodItem />
-        <FoodItem /> */}
+        <FoodItem />
+        <FoodItem />
       </Category>
       <Category title={"FULFILLING & WARM"} subtitle={"Breakfast & dinner"}>
         <FoodItem />
-        {/* <FoodItem />
-        <FoodItem /> */}
+        <FoodItem />
+        <FoodItem />
       </Category>
     </div>
   );

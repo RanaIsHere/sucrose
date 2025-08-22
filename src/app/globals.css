@@ -9,7 +9,7 @@
 
 html,
 body {
-  min-width: 100vw;
+  /* min-width: 100vw; */
   /* overflow-x: hidden; WHY DOES THIS DISABLE BOX-SHADOW??? */
 }
 
