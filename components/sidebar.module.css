@@ -44,6 +44,26 @@
     transition: 200ms all;
 }
 
+.sidebarGroup a::after {
+    position: absolute;
+    transform: translateY(70%);
+    content: '—';
+    font-size: 16px;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: 200ms all;
+}
+
+.sidebarGroup a:hover::after {
+    position: absolute;
+    transform: translateY(70%);
+    content: '—';
+    font-size: 16px;
+    margin-left: 0.5rem;
+    opacity: 0.8;
+    transition: 200ms all;
+}
+
 .sidebarGroup a:hover {
     margin-right: 3rem;
     opacity: 0.8;
