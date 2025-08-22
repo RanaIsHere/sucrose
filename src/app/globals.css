@@ -3,6 +3,9 @@
   --foreground: #3B4A34;
   --foreground-card: #38503F;
   --foreground-box: #87A878;
+  --button-normal: #87A878;
+  --button-hover: #9fc28f;
+  --button-active: #789969;
   --text-color: white;
   --text-hint: #C4E0B7;
 }

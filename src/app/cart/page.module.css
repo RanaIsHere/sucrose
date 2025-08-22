@@ -26,10 +26,134 @@
     opacity: 75%;
 }
 
+.checkoutContainer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
 .itemContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--foreground-card);
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--text-hint);
+}
+
+.subTotalItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.subTotalTax {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1;
+    font-size: 1.5rem;
+    opacity: 0.75;
+}
+
+.subTotalVoucher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1;
+    font-size: 1.5rem;
+    opacity: 0.75;
+}
+
+.voucherPicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.notesTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3rem;
+    gap: 1rem;
+}
+
+.notesTitle p:nth-child(2) {
+    font-family: var(--font-inika-regular);
+    font-size: 1.5rem;
+    opacity: 75%;
+}
+
+.notes textarea {
+    font-family: var(--font-inika-regular);
+    font-size: 1.5rem;
+    background-color: var(--foreground-box);
+    color: white;
+    border: 1px solid var(--text-hint);
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    resize: none;
+}
+
+.notes textarea::placeholder {
+    color: var(--text-hint);
+}
+
+.notes textarea:focus {
+    outline: 2px solid rgb(109, 199, 109);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: var(--button-normal);
+    color: white;
+    font-family: var(--font-koulen-regular);
+    font-size: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border: 0;
+    outline: 0;
+    height: fit-content;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+.button:active {
+    background-color: var(--button-active);
 }

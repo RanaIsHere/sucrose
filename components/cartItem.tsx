@@ -8,11 +8,17 @@ import styles from './cartItem.module.css';
 export default function CartItem() {
     const [quantity, setQuantity] = useState<number>(1);
 
-    const incrementQuantity = () => { setQuantity(quantity + 1) }
+    const incrementQuantity = () => {
+        setQuantity(quantity + 1);
+    }
 
     const decrementQuantity = () => {
         if (quantity > 1)
-            setQuantity(quantity - 1)
+            setQuantity(quantity - 1);
+    }
+
+    const onChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setQuantity(Number(e.target.value));
     }
 
     return (
@@ -35,7 +41,7 @@ export default function CartItem() {
             <div className={styles.cardAction}>
                 <div className={styles.quantityIncrementor}>
                     <Image src="icons/plus-icon.svg" alt="Add" width={48} height={48} onClick={incrementQuantity} />
-                    <input type="number" name="quantity" id="quantity" className={styles.itemQuantity} defaultValue={quantity} min={1} onChange={(e) => setQuantity(Number(e.target.value))} />
+                    <input type="number" name="quantity" id="quantity" className={styles.itemQuantity} defaultValue={quantity} min={1} onChange={onChangeInputValue} disabled />
                     <Image src="icons/minus-icon.svg" alt="Subtract" width={48} height={48} onClick={decrementQuantity} />
                 </div>
 
