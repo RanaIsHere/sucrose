@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--foreground-card);
+    font-family: var(--font-koulen-regular);
+    font-size: 24px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #586951;
+}
+
+.cardImage {
+    width: 256px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardSubtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardPerks {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.perkItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}

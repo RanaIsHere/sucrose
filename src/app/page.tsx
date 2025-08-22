@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../../components/header";
 import styles from "./page.module.css";
 import Category from "../../components/category";
+import FoodItem from "../../components/foodItem";
 
 export default function Home() {
   return (
@@ -24,13 +25,19 @@ export default function Home() {
       </main>
 
       <Category title={"PAST JOY"} subtitle={"Your previous order"}>
-        <p>test</p>
+        <FoodItem />
+        {/* <FoodItem />
+        <FoodItem /> */}
       </Category>
       <Category title={"QUICK & SIMPLE"} subtitle={"On-the-go meals"}>
-        <p>test</p>
+        <FoodItem />
+        {/* <FoodItem />
+        <FoodItem /> */}
       </Category>
       <Category title={"FULFILLING & WARM"} subtitle={"Breakfast & dinner"}>
-        <p>test</p>
+        <FoodItem />
+        {/* <FoodItem />
+        <FoodItem /> */}
       </Category>
     </div>
   );
