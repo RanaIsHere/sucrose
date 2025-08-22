@@ -4,6 +4,7 @@
   --foreground-card: #38503F;
   --foreground-box: #87A878;
   --text-color: white;
+  --text-hint: #C4E0B7;
 }
 
 
@@ -30,4 +31,9 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
 }

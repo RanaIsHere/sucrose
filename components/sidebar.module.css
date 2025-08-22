@@ -32,6 +32,11 @@
     cursor: pointer;
 }
 
+.sidebarTitle p {
+    cursor: default;
+    user-select: none;
+}
+
 .sidebarGroup {
     display: flex;
     flex-direction: column;

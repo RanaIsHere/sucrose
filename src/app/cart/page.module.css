@@ -1,0 +1,35 @@
+.page {
+    color: white;
+    font-family: var(--font-koulen-regular);
+}
+
+.main {
+    margin: 1em;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title p:nth-child(1) {
+    font-family: var(--font-koulen-regular);
+    font-size: 48px;
+}
+
+.title p:nth-child(2),
+.title p:nth-child(3) {
+    font-family: var(--font-inika-regular);
+    font-size: 32px;
+    opacity: 75%;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
