@@ -17,6 +17,10 @@
     gap: 16px;
 }
 
+.buttonGroup a {
+    cursor: pointer;
+}
+
 @media screen and (width >=700px) {
     .buttonGroup {
         gap: 32px;
