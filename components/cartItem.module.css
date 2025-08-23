@@ -1,21 +1,23 @@
 .cardBody {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
     background-color: var(--foreground-card);
     font-size: 32px;
     padding-left: 1rem;
     padding-right: 1rem;
-    gap: 16rem;
+    gap: 2rem;
 }
 
 .cardHead {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
     gap: 2rem;
 }
 
 .cardImage {
-    width: 256px;
+    width: 100%;
     height: 210px;
     object-fit: cover;
     border-radius: 15px;
@@ -47,6 +49,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -72,4 +75,18 @@
     outline: 0;
     width: 4rem;
     height: 4rem;
+}
+
+@media screen and (width >=800px) {
+    .cardImage {
+        width: 256px;
+    }
+
+    .cardHead {
+        flex-direction: row;
+    }
+
+    .cardBody {
+        flex-direction: row;
+    }
 }

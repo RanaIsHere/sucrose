@@ -16,45 +16,57 @@
 
 .title p:nth-child(1) {
     font-family: var(--font-koulen-regular);
-    font-size: 48px;
+    font-size: 2.5rem;
 }
 
 .title p:nth-child(2),
 .title p:nth-child(3) {
     font-family: var(--font-inika-regular);
-    font-size: 32px;
+    font-size: 1.5rem;
     opacity: 75%;
 }
 
 .checkoutContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
     gap: 2rem;
     margin-top: 1rem;
+}
+
+.checkoutContainer hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    opacity: 0.25;
 }
 
 .itemContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
 }
 
 .infoContainer {
     display: flex;
     flex-direction: column;
-    background-color: var(--foreground-card);
+    /* background-color: var(--foreground-card); */
     flex-grow: 1;
     padding: 2rem;
+}
+
+.subTotal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .total {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1;
     color: var(--text-hint);
 }
@@ -63,7 +75,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .subTotalTax {
@@ -71,7 +83,7 @@
     flex-direction: row;
     justify-content: space-between;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: 0.75;
 }
 
@@ -80,7 +92,7 @@
     flex-direction: row;
     justify-content: space-between;
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: 0.75;
 }
 
@@ -89,13 +101,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 1;
 }
 
 .notes {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin-bottom: 2rem;
 }
 
@@ -103,13 +116,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     gap: 1rem;
 }
 
 .notesTitle p:nth-child(2) {
     font-family: var(--font-inika-regular);
-    font-size: 1.5rem;
+    font-size: 1rem;
     opacity: 75%;
 }
 
@@ -119,7 +132,7 @@
     background-color: var(--foreground-box);
     color: white;
     border: 1px solid var(--text-hint);
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     padding: 1rem;
     resize: none;
@@ -133,6 +146,70 @@
     outline: 2px solid rgb(109, 199, 109);
 }
 
+.separator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.additionals {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.checkoutGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (width >=800px) {
+    .separator {
+        flex-direction: row;
+    }
+}
+
+@media screen and (width >=700px) {
+    .title p:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .title p:nth-child(2),
+    .title p:nth-child(3) {
+        font-size: 2rem;
+    }
+
+    .total {
+        font-size: 3rem;
+    }
+
+    .subTotalItem {
+        font-size: 2rem;
+    }
+
+    .subTotalTax {
+        font-size: 1.5rem;
+    }
+
+    .subTotalVoucher {
+        font-size: 1.5rem;
+    }
+
+    .voucherPicker {
+        font-size: 3rem;
+    }
+
+    .notesTitle {
+        font-size: 3rem;
+    }
+
+    .notesTitle p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+}
+
 .button {
     display: flex;
     flex-direction: row;
@@ -143,10 +220,11 @@
     color: white;
     font-family: var(--font-koulen-regular);
     font-size: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border: 0;
     outline: 0;
+    width: fit-content;
     height: fit-content;
 }
 

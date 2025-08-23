@@ -21,9 +21,8 @@ export default function Sidebar({ isOpenable, toggleSidebar }: OpenableSidebarPr
             <div className={styles.sidebarGroup}>
                 <Link href="/">Home</Link>
                 <Link href="/cart">Cart</Link>
-                <Link href="/">Orders</Link>
-                <Link href="/">Account</Link>
-                {login ? <Link href="/">Sign Out</Link> : <Link href="/">Login</Link>}
+                <Link href="/orders">Orders</Link>
+                <Link href="/about-us">About Us</Link>
             </div>
         </aside>
     )
